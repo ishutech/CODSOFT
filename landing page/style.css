@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+}
+
+/* Header Styling */
+header.hero {
+    background:
+        linear-gradient(to right, rgba(255, 106, 149, 0.8), rgba(255, 158, 127, 0.8)),
+        url('ab.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header.hero .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+header.hero nav {
+    margin-top: 20px;
+}
+
+header.hero nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header.hero nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header.hero nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header.hero nav ul li a:hover {
+    color:rgba(177, 172, 179, 0.9);
+}
+
+.hero-content {
+    margin-top: 50px;
+}
+
+ h1 {
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #ff6a95;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffe4e1;
+    transform: scale(1.1);
+}
+
+/* Shop Section */
+section.shop {
+    background: #fff5e6;
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff6a95;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+}
+
+.product {
+    flex-grow: 1;
+    width: 25%;
+    background: #fff;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+   max-width: 95%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    color: #ff6a95;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.buy-now {
+    background-color: #ff6a95;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #ff9e7f;
+    transform: scale(1.1);
+}
+
+/* contact */
+.contact {
+        background: linear-gradient(to right, rgba(255, 106, 149, 0.7), rgba(255, 158, 127, 0.7)), 
+                    url('ef.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    color: white;
+    padding: 0%;
+}
+
+.contact h2,.signature h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 40%;
+    border-spacing: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+td {
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+    color: black;
+    background: rgb(255, 255, 255,0.7);;
+    border-radius: 4px;
+}
+
+.social-icons {
+    color: white;
+    margin-top: 50px;
+}
+
+.social-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+    margin: 15px;
+}
+
+/* flavours section*/
+.flavours {
+    background:  #fff5e6;
+}
+.signature {
+    background: linear-gradient(to right, rgba(255, 106, 149, 0.7), rgba(255, 158, 127, 0.7)), 
+                url('cd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
