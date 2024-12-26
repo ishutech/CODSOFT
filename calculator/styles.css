@@ -1,82 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  background: #f3f3f3;
 }
 
 .calculator {
-  width: 320px;
-  background: #ffffff;
+  width: 300px;
+  background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .display {
-  height: 80px;
-  background: #f9f9f9;
-  border-radius: 8px;
+  height: 70px;
+  background: #222;
+  color: #fff;
   font-size: 2rem;
-  color: #333;
   text-align: right;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: inset 0px -4px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden; 
-  white-space: nowrap; 
-  text-overflow: ellipsis; 
-  transition: font-size 0.3s; 
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 1px;
 }
 
 button {
   height: 60px;
   font-size: 1.2rem;
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  color: #333;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
   cursor: pointer;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background: #f0f0f0;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  background: #ddd;
 }
 
-.button-operator {
-  background: #f7f7f7;
-  color: #007bff;
-}
-
-.button-clear,
-.button-del {
-  background: #ff6b6b;
+button:nth-child(4n) {
+  background: #ff9500;
   color: #fff;
 }
 
-.button-equal {
-  background: #4caf50;
-  color: #fff;
-  grid-column: span 2;
+button:nth-child(4n):hover {
+  background: #e68a00;
 }
 
-.button-zero {
+button:nth-last-child(3) {
   grid-column: span 2;
 }

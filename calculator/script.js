@@ -39,12 +39,4 @@ function calculateResult() {
 
 function updateDisplay() {
   displayElement.textContent = displayValue;
-
-  const length = displayValue.length;
-  if (length > 12) {
-    displayElement.style.fontSize = "1.5rem"; 
-  } else if (length > 8) {
-    displayElement.style.fontSize = "2rem"; 
-    displayElement.style.fontSize = "2.5rem"; 
-  }
 }
